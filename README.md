@@ -19,3 +19,5 @@ If you are developing a production application, we recommend using TypeScript wi
 ## Rebase Practice
 
 This change was made remotely.
+## Fast Forward Practice
+This change was made on fast-branch.
