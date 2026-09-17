@@ -20,7 +20,7 @@ const TODO=memo(({todos,del})=>{
         </div>
     )
 });
-function Ken()
+function App()
 {
     const [todo,newTodo]=useState("");
     const [todoArray,newTodoArray]=useState([]);
@@ -55,4 +55,4 @@ function Ken()
         </div>
     );
 }
-export default Ken;
+export default App;
