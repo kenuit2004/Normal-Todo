@@ -20,7 +20,7 @@ const TODO=memo(({todos,del})=>{
         </div>
     )
 });
-function K()
+function App()
 {
     const [todo,newTodo]=useState("");
     const [todoArray,newTodoArray]=useState([]);
@@ -55,4 +55,4 @@ function K()
         </div>
     );
 }
-export default K;
+export default App;
