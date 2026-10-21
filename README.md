@@ -1,20 +1,104 @@
+# Interactive Task Manager
 
-# React + Vite
-##Remote Respository
-Add Remote Respository
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive Todo application built with React.js. This project allows users to add, delete, and filter tasks while demonstrating React Hooks, component-based architecture, and rendering optimization.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[View Live Application](https://normal-todo-one.vercel.app)
 
-## React Compiler
+## 📌 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Add Tasks:** Create new tasks using a controlled input field.
+- **Delete Tasks:** Remove tasks from the Todo list.
+- **Filter Tasks:** Search tasks using case-insensitive text matching.
+- **Dynamic Rendering:** Update the displayed task list when the application state changes.
+- **Empty State:** Display a message when the Todo list is empty.
+- **No-Match Message:** Display a message when no tasks match the search filter.
+- **Component Memoization:** Use `React.memo` to help avoid unnecessary child component renders.
+- **Optimized Filtering:** Use `useMemo` to cache filtered results until the task list or filter changes.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Vite
+- Git and GitHub
+- Vercel
 
-## Different 
+## 📂 Project Structure
+
+```text
+Normal-Todo/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## ⚙️ Installation and Setup
+
+### Prerequisites
+
+- Node.js
+- npm
+- Git (optional, for cloning the repository)
+
+### Steps
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/kenuit2004/Normal-Todo.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd Normal-Todo
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal.
+
+## 🧠 React Concepts Demonstrated
+
+- **useState:** Manage task input, task list, and filter input.
+- **useMemo:** Memoize filtered task results.
+- **React.memo:** Memoize the Todo list component.
+- **Controlled Components:** Synchronize input fields with React state.
+- **Props:** Pass task data and delete handlers to child components.
+- **Functional State Updates:** Update the task list based on its previous state.
+- **Array Methods:** Use `filter()` and `map()` to manage and display tasks.
+
+## 🔮 Future Improvements
+
+- Add CSS styling and responsive design.
+- Implement task editing and completion status.
+- Add local storage to persist tasks after refreshing the page.
+- Improve input validation and prevent whitespace-only tasks.
+
+## 👨‍💻 Author
+
+**Kenuit M**
+
+- GitHub: [kenuit2004](https://github.com/kenuit2004)
+- LinkedIn: [kenuitm](https://linkedin.com/in/kenuitm)
